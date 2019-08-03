@@ -1,0 +1,9 @@
+create table tb_user(
+    user_id INT UNSIGNED AUTO_INCREMENT,
+    phone varchar(11) not null unique ,
+    password varchar(200) not null ,
+    nickname varchar(50) not null ,
+    avater varchar(100),
+    signature varchar(50),
+    PRIMARY KEY ( `user_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
